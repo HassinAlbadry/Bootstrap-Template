@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <title>My bootstrap template</title>
+  </head>
+  <body>
+  <div class="container-fluid">
+            <div class="row h-100 justify-content-center align-items-center">
+          <!-- logo -->
+              <div class="col">
+                <img src="./img/logo.jpg" alt="logo">
+              </div>
+          <!-- end logo -->
+
+          <!-- search field -->
+              <div class="col-5 ha-adjust-search-mobile">
+                <div class="ha_align">
+                 <input type="search" name="q" id="txtSearch" class="ha_input" placeholder="Search our inventory">
+                 <button id="btnSearch" class="ha_button" aria-label="Submit Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+              </div>
+
+          <!-- end search field -->
+
+          <!-- phone -->
+              <div class="col-2 ha-adjust-headphones">
+              <div class="ha-adjust-help-mobile">
+              <i class="fas fa-headphones"></i>
+
+
+
+
+                  <span class="phoneNumber">Call 123-456-7899</span>
+
+                  <span class="pipe"> | </span>
+                  <a href="">Help</a>
+
+              </div>
+              </div>
+
+
+          <!-- end phone -->
+              <div class="col ha-adjust-myaccount-mobile">
+              <button type="button" class="accountLink" id="btnChangeLoginDialog" aria-label="My Account">
+                <i class="far fa-user"></i> &nbsp;  &nbsp; 
+                      
+
+                            <span class="icon-header-account" aria-hidden="true" role="presentation"></span><div class="myAccountText">My Account<div class="accountName"></div></div>
+                        </button>
+              </div>
+              <div class="col-2 ha-adjust-cart-mobile">
+               
+                    <a href="" aria-label="Shopping Cart" id="">
+                      <svg id="icon-header-cart" aria-labelledby="cartIconTitle" role="img" width="35.003" height="24.265" version="1.1" viewBox="0 0 35.003 24.265" xmlns="http://www.w3.org/2000/svg">
+                            <title id="cartIconTitle">Shopping Cart: 0 items</title>
+                            <path class="cls-1" d="m23.984 21.351a2.916 2.916 0 1 1 2.918 2.914 2.917 2.917 0 0 1-2.918-2.914zm-13.623 0a2.913 2.913 0 1 1 2.912 2.914 2.912 2.912 0 0 1-2.912-2.914zm-0.953-5.294a0.952 0.952 0 0 1-0.908-0.675l-3.2-10.729h-4.354a0.9465 0.9465 0 0 1 0-1.893h5.061a0.942 0.942 0 0 1 0.9 0.675l3.205 10.729h19.717l3.318-10.984a0.946 0.946 0 1 1 1.811 0.547l-3.523 11.659a0.946 0.946 0 0 1-0.908 0.67z"></path>
+                            <text x="19.0616" y="11.026578" style="">
+                                <tspan id="SVG_cartQuantity" x="19.0616" y="11.026578" style="">0</tspan>
+                            </text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row ha-adjust-my-container">
+
+          <div class="col-8">
+              <div id="ha-adjust-shop">
+
+                <i class="fas fa-bars"></i>
+                <span class="ha-style-cat">Shop By Category</span>
+
+                <div class="ha-location">
+                    <strong id="ha-adjust-deliverto-mobile"> Deliver to</strong>
+                    <button id="btnChangeLocationDialog" class="changeLocationDialog">Change Location</button>
+                    <!-- change location dialog handled via script -->
+                </div>
+</div>
+                
+
+              
+          </div>
+
+
+
+
+        </div>
+      </div>
+      
+<div class="container">
+<div class="row ha-adjust-carousel">
+<div class="col">
+<div id="carouselExampleCaptions" class="carousel slide ha-adjust-carousel-mobile" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ha-adjust-carousel-mobile">
+    <div class="carousel-item active">
+      <img src="https://fakeimg.pl/500x150/" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="mobileHidden bannerText1 font-size-24 font-weight-500 line-height-31"><!--Sale!--></div>
+        <div class="mobileHidden bannerText2 font-size-46 font-weight-900 line-height-53"><!--90% OFF--></div>
+        <div class="mobileHidden bannerText3 font-size-24 font-weight-500 line-height-31"><!--All products--> </div>
+        <div class="mobileHidden bannerText4 font-size-16 font-weight-400 line-height-23"><!--Offer Ends 10/31/21--></div>
+        <a data-event-label="Banner: Shop Now (Blowout Sale!)" class="bannerButton  PED_button " href="">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://fakeimg.pl/500x150/" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://fakeimg.pl/500x150/" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+    <span class="plusLeft">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+    <span class="plusRight">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="title_set">
+        <h2>Shop By Need</h2>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="fl_left b_inner2">
+            <div class="fl_left b_inner3">
+                <div class="img_box2">
+                    <a class="link_18 bdr_bot bluelink" href="" tabindex="-1" aria-hidden="true"><img src="https://fakeimg.pl/314x216/" alt="et malesuada"></a>
+                </div>
+                <a class="link_18 bdr_bot bluelink" href=""><span>Category 1</span></a>
+            </div>
+            <div class="fl_right b_inner3">
+                <div class="img_box2">
+                    <a class="link_18 bdr_bot bluelink" href="" tabindex="-1" aria-hidden="true"><img src="https://fakeimg.pl/314x216/" alt="Heaters"></a>
+                </div>
+                <a class="link_18 bdr_bot bluelink" href=""><span>Category 2</span></a>
+            </div>
+        </div>
+  </div>
+
+  <div class="col-6">
+<div class="fl_right b_inner2">
+            <div class="fl_left b_inner3">
+                <div class="img_box2">
+                    <a class="link_18 bdr_bot bluelink" href="" tabindex="-1" aria-hidden="true"><img src="https://fakeimg.pl/314x216/" alt="Indoor Air Quality"></a>
+                </div>
+                <a class="link_18 bdr_bot bluelink" href=""><span>Category 3</span></a>
+            </div>
+            <div class="fl_right b_inner3">
+                <div class="img_box2">
+                    <a class="link_18" href="" tabindex="-1" aria-hidden="true"><img src="https://fakeimg.pl/314x216/" alt="Water Heaters"></a>
+                </div>
+                <a class="link_18" href=""><span>Category 4</span></a>
+            </div>
+        </div>
+
+
+  </div>
+</div>
+<div class="row">
+<div id="why_acw">
+    <div class="content_box" aria-expanded="false">
+        <div class="w_50">
+            <div class="txt_inner">
+                <span class="large_f">Why Choose us mytemplate.com</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies nibh mi, a ullamcorper magna semper vitae. Duis eu est eget sapien elementum egestas. Fusce sit amet justo volutpat, facilisis risus bibendum, imperdiet diam. Nam pulvinar eros nec est ornare, non rutrum nunc efficitur. Vestibulum mollis nibh quis ligula elementum mattis. Pellentesque maximus justo et mattis molestie. Nulla faucibus nisi vitae libero posuere, vitae elementum lorem condimentum. Aliquam neque odio, sagittis a porttitor non, blandit quis purus. Donec non scelerisque felis, vel lobortis lorem.</p>
+            </div>
+        </div>
+        <div class="w_50">
+            <div class="cont_inner">
+                <div class="w100 rec_box col_db fl_right">
+                    <div class="b_icon" style="width: 84px;">
+                        <img src="./img/icon-why-us-people.svg" alt="Direct to the Public">
+                    </div>
+                    <p>What is Lorem Ipsum</p>
+                </div>
+                <div class="rec_box col_gr fl_left">
+                    <div class="b_icon" style="width: 88px;">
+                        <img src="./img/icon-why-us-boxes.svg" alt="Over 20,000 Products">
+                    </div>
+                    <p>Why do we use it</p>
+                </div>
+                <div class="rec_box col_lb fl_right">
+                    <div class="b_icon" style="width: 43px;">
+                        <img src="./img/icon-why-us-security.svg" alt="Secure Shopping Experience">
+                    </div>
+                    <p>Where does it come from</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="row">
+<div class="col-12">
+    <div class="title_set">
+        <h2>Tools &amp; Articles</h2>
+    </div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-6">
+    <div class="fl_left b_inner">  <a href="">  <img src="https://fakeimg.pl/636x221/" title="Basement Heating Ideas" alt="porttitor rhoncus dolor purus">  </a>  <a class="darkbluelink" href="">  <span class="hb_title">porttitor rhoncus dolor purus</span>  </a>  <p>porttitor rhoncus dolor purus</p></div>
+
+</div> 
+
+<div class="col-6">
+    <div class="fl_right b_inner">  <a href="">  <img src="https://fakeimg.pl/636x221" title="How do whole house fans work" alt="How do whole house fans work">  </a>  <a class="darkbluelink" href="">  <span class="hb_title">porttitor rhoncus dolor purus?</span>  </a>  <p>porttitor rhoncus dolor purus</p></div>
+
+</div>
+
+</div>
+
+
+<div class="row ha-adjust-popular-category-mobile">
+    <div class="col-12">
+        <div class="title_set">
+            <h2>Popular Categories</h2>
+        </div>
+
+    </div>
+</div>
+<div class="row ha-adjust-popular-category-mobile">
+    <div class="col-3">
+        <div class="ha_fl_left b_inner3">
+                <div class="img_box2">
+                    <img src="https://fakeimg.pl/304x209/" alt="lorem">
+                </div>
+                
+
+                <h4>a scelerisque</h4>
+                
+                <a class="link_16" href=""><span>urna neque viverra justo</span></a>
+                <a class="link_16" href=""><span>in hac habitasse platea</span></a>
+                <a class="link_16" href=""><span>velit euismod in pellentesque</span></a>
+                <a class="link_16" href=""><span>tellus mauris a diam</span></a>
+                <a class="link_16" href=""><span>tortor posuere ac ut</span></a>
+            </div>
+    </div>
+    <div class="col-3">
+        <div class="ha_fl_left b_inner3">
+                <div class="img_box2">
+                    <img src="https://fakeimg.pl/304x209/" alt="Air Conditioners">
+                </div>
+                <a class="darkbluelink pop_cat_link" href="">
+                    <h4>tincidunt ornare massa</h4>
+                </a>
+                <a class="link_16" href=""><span>egestas dui id ornare</span></a>
+                <a class="link_16" href=""><span>vitae congue eu consequat</span></a>
+                <a class="link_16" href=""><span>netus et malesuada fames</span></a>
+                <a class="link_16" href=""><span>nibh ipsum consequat nisl</span></a>
+                <a class="link_16" href=""><span>Lorem</span></a>
+            </div>
+    </div>
+<div class="col-3">
+                <div class="ha_fl_left b_inner3">
+                    <div class="img_box2">
+                        <img src="https://fakeimg.pl/304x209/" alt="lorem">
+                    </div>
+                    <a class="darkbluelink pop_cat_link" href="">
+                        <h4>dignissim diam quis</h4>
+                    </a>
+                    <a class="link_16" href=""><span>sed cras ornare arcu</span></a>
+                    <a class="link_16" href=""><span>lectus quam id leo</span></a>
+                    <a class="link_16" href=""><span>aliquam etiam erat velit</span></a>
+                    <a class="link_16" href=""><span>viverra accumsan in nisl</span></a>
+                    <a class="link_16" href=""><span>sed risus pretium quam</span></a>
+                </div>
+
+    </div>
+    <div class="col-3">
+        <div class="ha_fl_left b_inner3">
+                <div class="img_box2">
+                    <img src="https://fakeimg.pl/304x209/" alt="lorem">
+                </div>
+                <a class="darkbluelink pop_cat_link" href="">
+
+                <h4>blandit massa enim</h4>
+            </a>
+                <a class="link_16" href=""><span>aliquam ut porttitor leo</span></a>
+                <a class="link_16" href=""><span>id aliquet lectus proin</span></a>
+                <a class="link_16" href=""><span>vel facilisis volutpat est</span></a>
+                <a class="link_16" href=""><span>vestibulum</span></a>
+                <a class="link_16" href=""><span>posuere sollicitudin</span></a>
+            </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12">
+<div id="footer_seo">
+    <div class="content_box" aria-expanded="false">
+        <div class="footer_seo_content">
+                          Curabitur interdum, diam eget scelerisque imperdiet, massa sapien fringilla orci, eu vehicula arcu eros ac mauris. Sed nisi nisl, interdum sit amet accumsan dapibus, eleifend at orci. Donec nec nisi eget velit scelerisque vestibulum at et enim. Nullam viverra interdum nunc a condimentum. Donec luctus tempor elementum. Mauris quis lacus ex. Integer aliquam dui erat, sit amet mattis ante rhoncus ac. Donec laoreet commodo mauris. Vivamus quis enim at elit vulputate ultricies. Nullam efficitur est vehicula sem ultricies, et luctus massa vehicula. Fusce ut leo massa. Sed pellentesque lacus eu ex molestie interdum. Aliquam erat volutpat. Fusce accumsan in mi id ultricies. Proin lobortis tellus ut diam tempus suscipit. In varius libero a sapien dapibus, et eleifend orci aliquam.
+                    </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="row">
+    <!--<div class="col-12">-->
+
+<div id="footer" class="footer">
+    
+
+
+
+    <div class="content_box" aria-expanded="false">
+        <div class="upper">
+            <div class="footerLeft">
+                <div class="emailSignup">
+                    <div><span class="larger bold">Email Sign Up</span></div>
+                    <div><span class="ft_span_14">Get the scoop on exclusive deals, buying guides, and tips.</span></div>
+                    <form action="" method="post" onsubmit="return checkEmailSignup();" id="email_signup">
+                        <input type="hidden" name="action" value="process">
+                        <input type="hidden" name="s" id="s" value="16">
+                        <input type="hidden" name="formToken" id="acwEmailformToken" value="d6870ce1a5ec0b6bceb927fd3eb874ebb77e94d0809c9067729a1d1fc4fc2939">
+                        <!-- <input type="text" name="MERGE0" id="MERGE0" size="25" value="Enter Email Address" onfocus="EmailBox(this.value);" onblur="EmailBox1(this.value);" /> -->
+                        <input type="hidden" name="MERGE3" id="MERGE3" value="NULL">
+                        <div class="emailEnter"><div class="emailR">
+                            <input value="Sign Up" type="submit" class="button emailButton"></div>
+                            <div class="emailL"><!-- <label for="MERGE0" class="hide">Email</label> --><input class="emailTextBox" type="text" name="MERGE0" id="MERGE0" size="25" value="Enter Email Address" aria-label="Enter Email Address" onfocus="EmailBox(this.value);" onblur="EmailBox1(this.value);"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="line mobile-show"></div>
+                <div class="storeHours">
+                    <div><span class="larger bold">Store Hours</span></div>
+                    <div class="ft_span_14">Monday - Thursday: 8 AM - 5 PM CST</div><div class="ft_span_14">Friday: 9 AM - 5 PM CST</div><div class="ft_span_14">Saturday: Closed</div><div class="ft_span_14">Sunday: Closed</div>                </div>
+
+                    
+            </div>
+          
+
+        <div style="clear:both;"></div>
+        <div class="line"></div>
+        <div class="under">
+        <div class="socialContent">
+            <div class="socialTitle"><span class="larger bold">Stay Connected</span></div>
+            <div class="socialIcons">
+                <div><a href="" title="AC Wholesalers on Facebook" target="_blank"><img class="ftr-smfb" src="./img/facebook.svg" width="30" height="30" border="0" alt="Visit AC Wholesalers on Facebook"></a></div>
+                <div><a href="" title="AC Wholesalers on Twitter" target="_blank"><img class="ftr-smtw" src="./img/twitter.svg" width="30" height="30" border="0" alt="View the AC Wholesalers Twitter Profile Page"></a></div>
+                <div><a href="" title="AC Wholesalers on Pinterest" target="_blank"><img class="ftr-smpt" src="./img/pinterest.svg" width="30" height="30" border="0" alt="Follow AC Wholesalers on Pinterest"></a></div>
+                <div><a href="" title="AC Wholesalers on YouTube" target="_blank"><img class="ftr-smyt" src="./img/youtube.svg" width="30" height="30" border="0" alt="View AC Wholesalers YouTube Channel"></a></div>
+                <div><a href="" title="AC Wholesalers on Instagram" target="_blank"><img class="ftr-sminst" src="./img/instagram.svg" width="30" height="30" border="0" alt="View AC Wholesalers Instagram Profile Page"></a></div>                            </div>
+        </div>
+        <div class="underPhone"><span class="larger bold">Call Us: (123) 456-0000</span></div>
+                <div class="underPhone_mob"><a href="">Call Us: (000) 000-0000</a></div>
+        <div class="underCR ft_span_14">©2021 loremlorem.com Inc. All Rights Reserved.</div>
+        </div>
+    </div>
+</div>
+
+   <!-- </div> -->
+</div>
+</div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
